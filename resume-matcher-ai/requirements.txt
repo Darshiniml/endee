@@ -1,4 +1,4 @@
-sentence-transformers
 streamlit
-numpy
+pdfplumber
 scikit-learn
+reportlab
