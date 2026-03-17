@@ -1,69 +1,188 @@
-# AI Resume Matcher using Endee Vector Database
+# 🚀 AI Resume Intelligence Platform
 
-## Overview
-This project demonstrates an AI-powered Resume–Job Description matching system.  
-It uses vector representations of text to compute similarity between resumes and job descriptions.
+An advanced AI-powered system that analyzes resumes against job descriptions and provides intelligent insights such as match score, skill gaps, resume improvements, and auto-generated cover letters.
 
-The system is designed following the architecture of the Endee Vector Database for efficient semantic search.
+---
 
-## Features
-- Resume semantic similarity matching
-- Skill extraction from resume
-- Missing skill detection
-- Vector-based document comparison
-- AI-powered job matching
+## 📌 Overview
 
-## Technology Stack
-- Python
-- Streamlit
-- Scikit-learn
-- TF-IDF Vectorization
-- Endee Vector Database (Architecture Integration)
+This project simulates a real-world **ATS (Applicant Tracking System)** used by companies to screen candidates efficiently. It uses NLP techniques to evaluate how well a resume matches a given job description.
 
-## System Architecture
+---
 
+## ✨ Features
+
+### 📊 Resume Analysis
+
+* Match Score using TF-IDF + Cosine Similarity
+* Skill Coverage percentage
+* Matched Skills vs Missing Skills
+
+### 📄 Resume Insights
+
+* Keyword highlighting
+* Resume readability analysis
+
+### ✍ AI Resume Rewriter
+
+* Improves resume sentences
+* Converts weak verbs into strong action verbs
+
+### ✉ Cover Letter Generator
+
+* Generates job-specific professional cover letter
+
+### 📥 AI Report Download
+
+* Download complete analysis as PDF
+
+### 🎨 UI Features
+
+* Dark / Light mode toggle
+* Clean tab-based UI
+* Skill badge visualization
+
+---
+
+## 🧠 Tech Stack
+
+* Python
+* Streamlit
+* Scikit-learn (TF-IDF, Cosine Similarity)
+* PDFPlumber
+* ReportLab
+
+---
+
+## ⚙️ How It Works
+
+1. Resume and job description are converted into vectors using TF-IDF.
+2. Cosine similarity calculates how closely they match.
+3. Skills are extracted using keyword mapping.
+4. The system generates insights including score, skill gaps, and suggestions.
+
+---
+
+## 🧠 System Architecture
+
+```
 User Input (Resume + Job Description)
         ↓
-Text Preprocessing
+PDF/Text Extraction
         ↓
-Vector Embedding Generation
+Text Preprocessing & Cleaning
         ↓
-Endee Vector Database
+Feature Extraction (TF-IDF)
         ↓
-Vector Similarity Search
+Similarity Computation (Cosine Similarity)
         ↓
-Match Score + Skill Analysis
+Skill Extraction & Comparison
+        ↓
+Analysis Engine
+        ↓
+Output (Score, Skills, Suggestions, Report)
+```
 
-## How It Works
-1. The user inputs a resume and job description.
-2. Text is converted into vector embeddings.
-3. These vectors represent the semantic meaning of the text.
-4. Similarity search is performed to calculate the match score.
-5. The system identifies matched and missing skills.
+---
 
-## Running the Project
+## ⚙️ Working Flow
 
-Install dependencies:
+### 1. Input Layer
 
+* Resume upload (PDF or text)
+* Job description input
+
+### 2. Preprocessing
+
+* Extract text using pdfplumber
+* Clean and normalize text
+
+### 3. Feature Extraction
+
+* Convert text into vectors using TF-IDF
+
+### 4. Matching
+
+* Compute similarity using cosine similarity
+
+### 5. Skill Analysis
+
+* Identify matched and missing skills
+
+### 6. AI Enhancements
+
+* Resume rewriter improves sentences
+* Cover letter generator creates professional output
+
+### 7. Output
+
+* Displays score, insights, suggestions
+* Generates downloadable PDF report
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+
+![Home](Screenshots/home.png)
+
+---
+
+### 📊 Analysis Dashboard
+
+![Analysis](Screenshots/analysis.png)
+
+---
+
+### 📄 Resume Insights
+
+![Insights](Screenshots/insights.png)
+
+---
+
+### ✍ Resume Rewriter
+
+![Rewriter](Screenshots/report.png)
+
+---
+
+### ✉ Cover Letter Generator
+
+![Cover Letter](Screenshots/cover_letter.png)
+
+---
+
+## ▶️ How to Run
+
+```bash
 pip install -r requirements.txt
+streamlit run app.py
+```
 
-Run the application:
+---
 
-python -m streamlit run app.py
+## 🚀 Future Enhancements
 
-Open the browser:
+* Integration with **Vector Databases (Endee)** for scalable similarity search
+* Use of transformer-based embeddings
+* Multi-job comparison feature
+* Improved ATS scoring model
 
-http://localhost:8501
+---
 
-## Example Output
+## 👩‍💻 Author
 
-Match Score: 82%
+**Darshini ML**
+BE CSE | ACS College of Engineering
+CGPA: 9.1
 
-Matched Skills:
-- Java
-- REST API
-- SQL
+📧 [mldarshini933@gmail.com](mailto:mldarshini933@gmail.com)
+🔗 https://www.linkedin.com/in/darshini-ml
+💻 https://github.com/Darshiniml
 
-Missing Skills:
-- Docker
-- Kubernetes
+---
+
+## ⭐ Conclusion
+
+This project demonstrates how AI and NLP can be applied to automate resume screening and provide meaningful insights, making it useful for both job seekers and recruiters.
