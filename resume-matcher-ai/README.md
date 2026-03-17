@@ -125,31 +125,31 @@ Output (Score, Skills, Suggestions, Report)
 
 ### 🏠 Home Page
 
-![Home](Screenshots/home.png)
+![Home](screenshots/home.png)
 
 ---
 
 ### 📊 Analysis Dashboard
 
-![Analysis](Screenshots/analysis.png)
+![Analysis](screenshots/analysis.png)
 
 ---
 
 ### 📄 Resume Insights
 
-![Insights](Screenshots/insights.png)
+![Insights](screenshots/insights.png)
 
 ---
 
 ### ✍ Resume Rewriter
 
-![Rewriter](Screenshots/report.png)
+![Rewriter](screenshots/report.png)
 
 ---
 
 ### ✉ Cover Letter Generator
 
-![Cover Letter](Screenshots/cover_letter.png)
+![Cover Letter](screenshots/cover_letter.png)
 
 ---
 
